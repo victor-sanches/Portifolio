@@ -3,6 +3,7 @@ html, body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0 20px;
+  overflow-x: hidden; /* <- impede rolagem horizontal */
   color: #333;
   background-image: url('imagens/ffapu6nxbihe77kajjmeh-e1674740233107.png'); /* ou 'images/fundo.jpg' se estiver em subpasta */
   background-size: cover;       /* cobre a tela toda */
@@ -55,8 +56,10 @@ html, body {
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
   }
   
-  section.active {
-    display: block;
+ section {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
   }
   
   h2 {
@@ -102,31 +105,26 @@ html, body {
       transform: translateX(-100%);
     }
   } 
+@media (max-width: 600px) {
   .perfil {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    text-align: center;
   }
-  
-  .perfil img {
-    width: 175px;
-    height: 175px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #0066cc;
-  }
-  
+
   .perfil p {
-    flex: 1;
-  } 
+    padding: 0 10px;
+  }
+}
   p {
     text-align: justify;
   }
   .redes-sociais {
-    position: absolute;
-    top: 10px;
-    left: 50px;
-    z-index: 1000;
+  position: fixed; /* fixo no topo */
+  top: 10px;
+  right: 10px;
+  display: flex;
+  z-index: 1000;
   }
   
   .redes-sociais a {
