@@ -12,6 +12,4 @@
 
    - Configurei o projeto para subir no GitHub e publiquei o site usando Vercel, garantindo atualizações em tempo real.
 
-   - Usei o .gitignore para evitar o envio de arquivos desnecessários, mantendo o repositório organizado.
-
    - Integrei imagens, textos, e organizei conteúdos de cursos, experiência e projetos em um layout responsivo e limpo.
