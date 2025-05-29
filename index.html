@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio João Victor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<footer>
+    <div class="marquee">
+      <span>
+        Java • C# • HTML • JavaScript • Next.js • Windows • Git • GitHub • Linux • VirtualBox •
+      </span>
+    </div>
+  </footer>
+  
+  <style>
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #0066cc;
+      color: white;
+      padding: 10px 0;
+      overflow: hidden;
+    }
+  
+    .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+  
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+      font-weight: bold;
+    }
+  
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+  <footer>
+    <div class="marquee">
+      <div class="marquee-content">
+        <img src="imagens/icons8-java-94.png" alt="Java" />
+        <img src="imagens/icons8-c-sharp-logo-48.png" alt="C#" />
+        <img src="imagens/icons8-html-5-48.png" alt="HTML" />
+        <img src="imagens/icons8-javascript-48.png" alt="JavaScript" />
+        <img src="imagens/icons8-windows-10-48.png" alt="Windows" />
+        <img src="imagens/icons8-git-48.png" alt="Git" />
+        <img src="imagens/icons8-github-48.png" alt="GitHub" />
+        <img src="imagens/icons8-linux-48.png" alt="Linux" />
+        <img src="imagens/icons8-virtualbox-48.png" alt="VirtualBox" />
+      </div>
+    </div>
+  </footer>    
+<body>
+    <header>
+    <div class="redes-sociais">
+        <a href="https://github.com/victor-sanches" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-sanches-6406b8248/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/joao___sanches/" target="_blank"><i class="fab fa-instagram"></i></a>    
+  </header>
+
+  <nav>
+    <button class="active" onclick="mostrarSecao('sobre', this)">Sobre</button>
+    <button onclick="mostrarSecao('formacao', this)">Formação</button>
+    <button onclick="mostrarSecao('habilidades', this)">Habilidades</button>
+    <button onclick="mostrarSecao('projetos', this)">Projetos</button>
+    <button onclick="mostrarSecao('experiencia')">Experiência</button>
+  </nav>
+
+  <section id="sobre" class="active">
+    <h2>Olá, me João Victor Sanches </h2>
+    <div class="perfil">
+        <img src="imagens/WhatsApp Image 2025-05-28 at 21.54.02.jpeg" alt="Foto de João Victor" />
+        <p>
+      Tenho experiência em manutenção de computadores, incluindo hardware e arquitetura, além de conhecimento intermediário em Windows e Linux (Ubuntu e Mint).
+      Já concluí diversos cursos focados em redes, programação, monitoramento e segurança da informação, incluindo Java, Git, Mikrotik, Zabbix, e LGPD.
+      Estou sempre aprendendo e pronto para novos desafios na área de tecnologia.
+    </p>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação e Cursos</h2>
+    <ul>
+        <li>Análise e Desenvolvimento de Sistemas – 3º período</li>
+      </ul>
+    
+      <h2>Cursos Complementares</h2>
+      <ul>
+        <li>Design Gráfico – Microlins (08/2020)</li>
+        <li>Informática Básica – Núcleo de Capacidade (06/2014)</li>
+        <li>Fundamentos: Redes EPON e GPON – Intelbras (05/2024)</li>
+        <li>Introdução às Redes de Computadores – Intelbras (05/2024)</li>
+        <li>Fibra Óptica do Zero – FiberSchool (07/2024)</li>
+        <li>Escola de Atendimento – Targo Consultoria (07/2024)</li>
+        <li>Versionamento de código com Git e GitHub – DIO (12/2024)</li>
+        <li>Curso Completo de Mikrotik: Básico e Avançado – Udemy (02/2025)</li>
+        <li>Monitoramento Online Avançado com Zabbix + Grafana – Udemy (02/2025)</li>
+        <li>Dominando a Linguagem de Programação Java – DIO (05/2025)</li>
+        <li>Lei Geral de Proteção de Dados (LGPD) – Fundação Bradesco (04/2025)</li>
+      </ul>
+    </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Manutenção de computadores (hardware e arquitetura)</li>
+      <li>Windows intermediário</li>
+      <li>Linux Ubuntu e Mint</li>
+      <li>Programação em Java</li>
+      <li>Redes EPON, GPON, Mikrotik</li>
+      <li>Monitoramento com Zabbix e Grafana</li>
+      <li>Versionamento com Git e GitHub</li>
+      <li>Conhecimento em LGPD</li>
+    </ul>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+  <ul>
+    <li>
+      <strong>Conta Bancária - Java:</strong>
+      <a href="https://github.com/victor-sanches/dio-trilha-java-basico/blob/main/ContaBanco/src/ContaTerminal.java" target="_blank">
+        Ver código no GitHub
+      </a>
+    </li>
+    <li>
+      <strong>Contador com Controle de Fluxo - Java:</strong>
+      <a href="https://github.com/victor-sanches/dio-trilha-java-basico/blob/main/controleFluxo/src/Contador.java" target="_blank">
+        Ver código no GitHub
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section id="experiencia">
+    <h2>Experiência Profissional</h2>
+    <ul>
+      <li>
+        <strong>Atendente de Suporte ao Cliente</strong> – Empresa Click IP (2025 - Atual)<br>
+      Atendimento técnico e orientação sobre produtos, auxiliando clientes na solução de problemas e fidelização.</li>
+    </ul>
+  </section>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

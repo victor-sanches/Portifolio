@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  color: #333;
+  background-image: url('imagens/ffapu6nxbihe77kajjmeh-e1674740233107.png'); /* ou 'images/fundo.jpg' se estiver em subpasta */
+  background-size: cover;       /* cobre a tela toda */
+  background-position: center;  /* centraliza */
+  background-repeat: no-repeat; /* evita repetição */
+  background-attachment: fixed;      /* mantém a imagem fixa ao rolar */
+  box-sizing: border-box;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+    background: #0066cc;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  nav button {
+    background: #eee;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav button:hover {
+    background: #ccc;
+  }
+  
+  nav button.active {
+    background: #0066cc;
+    color: white;
+  }
+  
+  section {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  section.active {
+    display: block;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #0066cc;
+    padding: 10px 0;
+    overflow: hidden;
+  }
+  
+  .marquee {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .marquee-content img {
+    width: 64px;
+    height: 64px;
+    margin: 0 20px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } 
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .perfil img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0066cc;
+  }
+  
+  .perfil p {
+    flex: 1;
+  } 
+  p {
+    text-align: justify;
+  }
+  .redes-sociais {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .redes-sociais a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .redes-sociais a:hover {
+    color: #0066cc;
+  }
