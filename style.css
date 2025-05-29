@@ -2,7 +2,8 @@ html, body {
   height: 100%;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0 20px;
+  padding-bottom: 60px; 
+  overflow-x: hidden; /* <- impede rolagem horizontal */
   color: #333;
   background-image: url('imagens/ffapu6nxbihe77kajjmeh-e1674740233107.png'); /* ou 'images/fundo.jpg' se estiver em subpasta */
   background-size: cover;       /* cobre a tela toda */
@@ -46,17 +47,17 @@ html, body {
   }
   
   section {
-    display: none;
-    max-width: 800px;
-    margin: 0 auto 40px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display: none;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
   }
-  
+
   section.active {
-    display: block;
+  display: block;
   }
   
   h2 {
@@ -69,13 +70,13 @@ html, body {
     list-style-type: disc;
     margin-left: 20px;
   }  
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #0066cc;
-    padding: 10px 0;
-    overflow: hidden;
+ footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: #0066cc;
+  padding: 10px 0;
+  overflow: hidden;
   }
   
   .marquee {
@@ -101,7 +102,7 @@ html, body {
     100% {
       transform: translateX(-100%);
     }
-  } 
+ } 
   .perfil {
     display: flex;
     align-items: center;
@@ -123,10 +124,11 @@ html, body {
     text-align: justify;
   }
   .redes-sociais {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    z-index: 1000;
+  position: fixed; /* fixo no topo */
+  top: 10px;
+  right: 10px;
+  display: flex;
+  z-index: 1000;
   }
   
   .redes-sociais a {
