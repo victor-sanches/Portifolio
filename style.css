@@ -47,19 +47,17 @@ html, body {
   }
   
   section {
-    display: block; /* <-- visível agora */
-    max-width: 800px;
-    margin: 0 auto 40px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display: none;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
   }
-  
- section {
-  max-width: 100%;
-  width: 100%;
-  box-sizing: border-box;
+
+  section.active {
+  display: block;
   }
   
   h2 {
