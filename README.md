@@ -1,4 +1,4 @@
-# Portifólioo
+# Portifólio
 
 ## O que fiz no projeto de portfólio:
 
