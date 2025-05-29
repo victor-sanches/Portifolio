@@ -102,13 +102,24 @@ html, body {
     100% {
       transform: translateX(-100%);
     }
- .perfil img {
-  width: 150px;       /* Ajusta o tamanho que quiser */
-  height: 150px;      /* Para manter proporção quadrada */
-  object-fit: cover;  /* Corta a imagem para preencher o círculo */
-  border-radius: 50%; /* Faz ficar redonda */
-  border: 3px solid #0066cc; /* Opcional: borda azul legal */
+ } 
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
+  
+  .perfil img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0066cc;
+  }
+  
+  .perfil p {
+    flex: 1;
+  } 
   p {
     text-align: justify;
   }
