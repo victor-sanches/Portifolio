@@ -20,8 +20,9 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -9999;
+  z-index: -1;
   pointer-events: none;
+  filter: brightness(0.7); /* <- escurece a imagem */
 }
    header {
     text-align: center;
