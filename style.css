@@ -5,7 +5,8 @@ html, body {
   padding-bottom: 60px; 
   overflow-x: hidden; /* <- impede rolagem horizontal */
   color: #333;
-  background-image: url('imagens/Untitled design.png'); /* ou 'images/fundo.jpg' se estiver em subpasta */
+  background-image: url('imagens/Untitled design.png');
+  filter: brightness(0.9) contrast(1.1); /* ajusta visualmente */
   background-size: cover;       /* cobre a tela toda */
   background-position: center;  /* centraliza */
   background-repeat: no-repeat; /* evita repetição */
@@ -50,7 +51,7 @@ html, body {
   display: none;
   max-width: 800px;
   margin: 0 auto 40px;
-  background-color: rgba(255, 255, 255, 0.85); /* ou 'transparent' */
+  background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
