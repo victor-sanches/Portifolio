@@ -6,7 +6,6 @@ html, body {
   overflow-x: hidden; /* <- impede rolagem horizontal */
   color: #333;
   background-image: url('imagens/Untitled design.png');
-  filter: brightness(0.9) contrast(1.1); /* ajusta visualmente */
   background-size: cover;       /* cobre a tela toda */
   background-position: center;  /* centraliza */
   background-repeat: no-repeat; /* evita repetição */
