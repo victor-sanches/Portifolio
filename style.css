@@ -147,3 +147,57 @@ body {
   .redes-sociais a:hover {
     color: #0066cc;
   }
+  @media (max-width: 768px) {
+    header {
+      font-size: 1.2em;
+      padding: 15px 10px;
+    }
+  
+    nav button {
+      padding: 8px 12px;
+      margin: 5px 3px;
+      font-size: 0.9em;
+    }
+  
+    section {
+      padding: 15px;
+      margin: 0 10px 30px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    .perfil {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .perfil img {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .perfil p {
+      text-align: justify;
+    }
+  
+    .marquee-content img {
+      width: 48px;
+      height: 48px;
+      margin: 0 10px;
+    }
+  
+    .redes-sociais {
+      top: auto;
+      bottom: 10px;
+      right: 10px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .redes-sociais a {
+      font-size: 1.3em;
+    }
+  }
+  
