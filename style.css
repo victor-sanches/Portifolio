@@ -7,6 +7,7 @@ html, body {
   color: #333;
   box-sizing: border-box;
   }
+<<<<<<< HEAD
   body::before {
     content: "";
     position: fixed;
@@ -23,6 +24,8 @@ html, body {
     pointer-events: none;
     filter: brightness(0.7); /* <- escurece a imagem */
   }
+=======
+>>>>>>> b12d4a3c21a08cf3cfedbaefa098904060ea0037
    header {
     text-align: center;
     padding: 20px 0;
