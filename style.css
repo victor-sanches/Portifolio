@@ -188,13 +188,13 @@ body {
       margin: 0 10px;
     }
   
-    redes-sociais {
-      position: fixed; /* <- ESSENCIAL */
-      top: auto;
-      bottom: 50px;
-      right: 10px;
-      flex-direction: column;
-      gap: 10px;
+    .redes-sociais {
+      position: fixed;
+      bottom: 50px !important;
+      right: 10px !important;
+      background: rgba(255, 0, 0, 0.2); /* só pra visualizar */
+      width: 100px;
+      height: 100px;
       z-index: 1000;
     }
   
