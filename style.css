@@ -188,12 +188,14 @@ body {
       margin: 0 10px;
     }
   
-    .redes-sociais {
+    redes-sociais {
+      position: fixed; /* <- ESSENCIAL */
       top: auto;
       bottom: 10px;
       right: 10px;
       flex-direction: column;
       gap: 10px;
+      z-index: 1000;
     }
   
     .redes-sociais a {
