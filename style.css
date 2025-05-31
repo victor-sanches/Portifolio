@@ -1,31 +1,21 @@
 html, body {
   height: 100%;
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding-bottom: 60px; 
-  overflow-x: hidden; /* <- impede rolagem horizontal */
+  padding-bottom: 50px;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
   color: #333;
   box-sizing: border-box;
-  }
-<<<<<<< HEAD
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('imagens/ffapu6nxbihe77kajjmeh-e1674740233107.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-    pointer-events: none;
-    filter: brightness(0.7); /* <- escurece a imagem */
-  }
-=======
->>>>>>> b12d4a3c21a08cf3cfedbaefa098904060ea0037
+}
+
+body {
+  /* 1) primeiro, um gradiente RGBA translúcido (a “camada de transparência”) */
+  /* 2) depois, a imagem de fundo normal */
+  background:
+    linear-gradient(rgba(2, 1, 1, 0.815), rgba(0, 0, 0, 0.918)),
+    url('imagens/ffapu6nxbihe77kajjmeh-e1674740233107.png') no-repeat center/cover fixed;
+}
+
    header {
     text-align: center;
     padding: 20px 0;
@@ -59,13 +49,14 @@ html, body {
   }
   
   section {
-  display: none;
-  max-width: 800px;
-  margin: 0 auto 40px;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    display: none;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background: rgba(0, 0, 0, 0.6); /* <- ESTA LINHA ESCURECE */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
   }
 
   section.active {
