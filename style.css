@@ -191,7 +191,7 @@ body {
     redes-sociais {
       position: fixed; /* <- ESSENCIAL */
       top: auto;
-      bottom: 10px;
+      bottom: 50px;
       right: 10px;
       flex-direction: column;
       gap: 10px;
