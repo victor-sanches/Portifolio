@@ -5,22 +5,31 @@ html, body {
   padding-bottom: 60px; 
   overflow-x: hidden; /* <- impede rolagem horizontal */
   color: #333;
-  background-image: url('imagens/ffapu6nxbihe77kajjmeh-e1674740233107.png'); /* ou 'images/fundo.jpg' se estiver em subpasta */
-  background-size: cover;       /* cobre a tela toda */
-  background-position: center;  /* centraliza */
-  background-repeat: no-repeat; /* evita repetição */
-  background-attachment: fixed;      /* mantém a imagem fixa ao rolar */
   box-sizing: border-box;
   }
-  
-  header {
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/ffapu6nxbihe77kajjmeh-e1674740233107.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    pointer-events: none;
+    filter: brightness(0.7); /* <- escurece a imagem */
+  }
+   header {
     text-align: center;
     padding: 20px 0;
     background: #0066cc;
     color: white;
     margin-bottom: 20px;
   }
-  
   nav {
     text-align: center;
     margin-bottom: 30px;
@@ -60,12 +69,13 @@ html, body {
   display: block;
   }
   
-  h2 {
-    border-bottom: 2px solid #0066cc;
-    padding-bottom: 8px;
-    margin-bottom: 15px;
-  }
-  
+ h2 {
+  font-size: 32px; /* Título grande e destacado */
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+ }
+
   ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -92,6 +102,7 @@ html, body {
   .marquee-content img {
     width: 64px;
     height: 64px;
+    object-fit: contain;
     margin: 0 20px;
   }
   
