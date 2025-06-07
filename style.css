@@ -130,7 +130,7 @@ body {
   }
   .redes-sociais {
   position: fixed; /* fixo no topo */
-  top: 10px;
+  top: 8px;
   right: 10px;
   display: flex;
   z-index: 1000;
