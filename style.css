@@ -12,14 +12,14 @@ body {
   /* 1) primeiro, um gradiente RGBA translúcido (a “camada de transparência”) */
   /* 2) depois, a imagem de fundo normal */
   background:
-    linear-gradient(rgba(2, 1, 1, 0.815), rgba(0, 0, 0, 0.918)),
+    linear-gradient(rgba(2, 1, 1, 0.842), rgba(0, 0, 0, 0.788)),
     url('imagens/ffapu6nxbihe77kajjmeh-e1674740233107.png') no-repeat center/cover fixed;
 }
 
    header {
     text-align: center;
     padding: 20px 0;
-    background: #0066cc;
+    background: #318eebde;
     color: white;
     margin-bottom: 20px;
   }
@@ -44,7 +44,7 @@ body {
   }
   
   nav button.active {
-    background: #0066cc;
+    background: #318eebde;
     color: white;
   }
   
@@ -65,7 +65,7 @@ body {
   
  h2 {
   font-size: 32px; /* Título grande e destacado */
-  border-bottom: 2px solid #0066cc;
+  border-bottom: 2px solid #318eebde;
   padding-bottom: 8px;
   margin-bottom: 15px;
  }
@@ -78,7 +78,7 @@ body {
   position: relative;
   bottom: 0;
   width: 100%;
-  background: #0066cc;
+  background: #318eebde;
   padding: 10px 0;
   overflow: hidden;
   }
@@ -139,7 +139,7 @@ body {
   .redes-sociais a {
     margin-right: 10px;
     color: #333;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -187,19 +187,17 @@ body {
       height: 48px;
       margin: 0 10px;
     }
-  
-    redes-sociais {
-      position: fixed; /* <- ESSENCIAL */
-      top: auto;
-      bottom: 50px;
-      right: 10px;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 1000;
+    .lista-cursos {
+      list-style: none; /* remove os pontinhos */
+      padding: 0;
+      margin: 0;
     }
-  
-    .redes-sociais a {
-      font-size: 1.3em;
+    
+    .lista-cursos li {
+      margin-bottom: 10px; /* espaçamento entre os itens */
+      font-size: 1rem;
+      font-family: 'Segoe UI', sans-serif;
+      border-left: 4px solid #007acc; /* opcional: barra lateral moderna */
+      padding-left: 10px;
     }
   }
-  
